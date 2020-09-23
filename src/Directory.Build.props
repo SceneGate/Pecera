@@ -1,0 +1,33 @@
+<Project>
+    <PropertyGroup>
+        <Product>SceneGate</Product>
+        <Authors>SceneGate</Authors>
+        <Company>None</Company>
+        <Copyright>Copyright (C) 2020 SceneGate</Copyright>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <!-- <PackageProjectUrl></PackageProjectUrl> -->
+        <!-- <RepositoryUrl></RepositoryUrl> -->
+        <!-- <PackageReleaseNotes>TODO</PackageReleaseNotes> -->
+        <!-- <PackageIcon>icon.png</PackageIcon> -->
+        <PackageTags>scenegate;romhacking</PackageTags>
+
+        <!-- Deterministic and source link -->
+        <PublishRepositoryUrl>true</PublishRepositoryUrl>
+        <IncludeSymbols>true</IncludeSymbols>
+        <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+        <EmbedUntrackedSources>true</EmbedUntrackedSources>
+        <AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
+    </PropertyGroup>
+
+    <!-- Deterministic and source link -->
+    <PropertyGroup Condition="'$(TF_BUILD)' == 'true'">
+        <Deterministic>true</Deterministic>
+        <ContinuousIntegrationBuild>true</ContinuousIntegrationBuild>
+    </PropertyGroup>
+    <ItemGroup>
+        <PackageReference Include="Microsoft.SourceLink.AzureRepos.Git" Version="1.0.0" PrivateAssets="All"/>
+    </ItemGroup>
+</Project>
