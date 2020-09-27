@@ -7,7 +7,7 @@
     "_enableNewTab": true,
     "_gitContribute": {
         "apiSpecFolder": "docs/apidoc",
-        "repo": "",
+        "repo": "https://github.com/SceneGate/Pecera",
         "branch": "develop"
     }
 }

@@ -8,8 +8,8 @@
 
     <PropertyGroup>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
-        <!-- <PackageProjectUrl></PackageProjectUrl> -->
-        <!-- <RepositoryUrl></RepositoryUrl> -->
+        <PackageProjectUrl>https://github.com/SceneGate/Pecera</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/SceneGate/Pecera</RepositoryUrl>
         <!-- <PackageReleaseNotes>TODO</PackageReleaseNotes> -->
         <!-- <PackageIcon>icon.png</PackageIcon> -->
         <PackageTags>scenegate;romhacking</PackageTags>
@@ -28,6 +28,6 @@
         <ContinuousIntegrationBuild>true</ContinuousIntegrationBuild>
     </PropertyGroup>
     <ItemGroup>
-        <PackageReference Include="Microsoft.SourceLink.AzureRepos.Git" Version="1.0.0" PrivateAssets="All"/>
+        <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0" PrivateAssets="All"/>
     </ItemGroup>
 </Project>

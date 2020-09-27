@@ -2,12 +2,14 @@
 obj/
 bin/
 artifacts/
+.vs/
 
 # Build system
 tools/
 
-# Test results
+# Test
 test_results/
+src/SceneGate.PC.Tests/resources/
 
 # Documentation output
 docs/_site
